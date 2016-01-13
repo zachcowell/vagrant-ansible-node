@@ -1,10 +1,7 @@
 # vagrant-ansible-node
 Vagrant/Ansible starter kit that contains node, gulp, bower
 
-Dev environment setup
----------------------
-
-## Setting it up for the first time
+## Setting up the environment for the first time
 
 * [Install Vagrant](http://vagrantup.com)
 
