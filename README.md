@@ -1,35 +1,35 @@
-# frontend-gulp-starter
-Gulp starter template for frontend (BS3, jQuery, RiotJS)
+# vagrant-ansible-node
+Vagrant/Ansible starter kit that contains node, gulp, bower
 
-## Getting Project Running Locally
+Dev environment setup
+---------------------
 
-* [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git#Installing-on-Linux)
+## Setting it up for the first time
 
-* [Install node.js](http://nodejs.org/)
+* [Install Vagrant](http://vagrantup.com)
 
-    * At the time of creation node.js version is: 4.2.1
-    * ***NOTE: DO NOT INSTALL NODE USING HOMEBREW*** - There are several known issues
-      involving npm and homebrew.
+* [Install Virtualbox](http://virtualbox.org)
 
-* [Install bower](http://bower.io/)
+* [Install Ansible](http://ansible.com)
 
-        npm install -g bower
+* run `vagrant up --provision` from `vagrant-ansible-node/vagrant` directory.
+  * *This may take some long the first time its run.*
 
-* [Install gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
+* Connect to the vagrant machine: `vagrant ssh`
 
-        npm install -g gulp
+* Hit: [http://localhost:3000/](http://localhost:3000) in your browser to see everything installed correctly.
 
-* Clone project locally
+## Coming back to the code after setting it up
 
-        HTTPS:  git clone https://github.com/zachcowell/frontend-gulp-starter.git
+* Start the vagrant instance again `vagrant up` from `vagrant-ansible-node/vagrant`
 
-* Cd into project directory (frontend-gulp-starter)
+* Connect to the vagrant machine: `vagrant ssh`
 
-        cd frontend-gulp-starter
+## Notes:
 
-* Enter the following command into the terminal at the project root to start.
-
-        npm install && gulp
+* The code is shared between local and the vagrant instance, you can edit
+  code normally on your host machine and the server will restart automatically
+  when code changes are detected
 
 ## Gulp Tasks
 
